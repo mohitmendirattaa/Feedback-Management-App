@@ -20,10 +20,10 @@ function FeedbackForm() {
   }, [feedbackEdit]);
 
   function handleChange(e) {
-    if (text == "") {
+    if (text === "") {
       setbtnDisabled(true);
       setMessage(null);
-    } else if (text != "" && text.trim().length <= 10) {
+    } else if (text !== "" && text.trim().length <= 10) {
       setbtnDisabled(true);
       setMessage("Text must be atleast 10 character");
     } else {

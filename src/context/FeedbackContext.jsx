@@ -4,18 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const FeedbackContext = createContext();
 function FeedbackProvider({ children }) {
-  const [feedback, setFeedback] = useState([
-    {
-      id: 1,
-      text: "Mohit Mendiratta",
-      rating: 5,
-    },
-    {
-      id: 2,
-      text: "Anshul Mendiratta",
-      rating: 8,
-    },
-  ]);
+  const [feedback, setFeedback] = useState([]);
 
   const [feedbackEdit, setFeedbackEdit] = useState({
     item: {},
